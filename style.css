@@ -21,6 +21,11 @@ header {
     align-items: center;
 }
 
+a {
+    text-decoration: none;
+    color: #222;
+}
+
 .logo img {
     width: 100px;
 }
@@ -39,6 +44,15 @@ header {
     color: #2c5fd5;
     font-weight: bold;
     text-decoration: none;
+}
+
+.subscribe .button {
+    border: none;
+    background-color: #fb2300;
+    color: #fff;
+    padding: 10px 16px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
 }
 
 main {
@@ -125,23 +139,77 @@ main {
 }
 
 .channel {
-    background-color: #673ab7;
     grid-area: channel;
+
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: start;
+    grid-gap: 1rem;
+}
+
+.channel img {
+    width: 48px;
+    border-radius: 50%;
+}
+
+.channel .date {
+    color: #777;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.channel .channel-description {
+    font-size: 0.8rem;
 }
 
 .subscribe {
-    background-color: #8bc34a;
     grid-area: subscribe;
+
+    padding: 3rem 1rem;
+    border-bottom: 1px solid #ddd;
+    text-align: right;
 }
 
 .ad {
-    background-color: #ff5722;
     grid-area: ad;
+
+    margin: 0 1rem 0 1rem;
+}
+
+.ad img {
+    width: 100%;
 }
 
 .up-next {
-    background-color: #3f51b5;
     grid-area: up-next;
+
+    margin: 1rem;
+}
+
+.up-next a {
+    display: grid;
+    grid-template-columns: 4fr 5fr;
+    grid-gap: 0.5rem;
+    padding-bottom: 0.75rem;
+}
+
+.up-next img {
+    width: 100%;
+}
+
+.up-next h4 {
+    margin: 0.25rem 0;
+    font-size: 0.9rem;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.up-next p {
+    color: #888;
+    font-size: 0.9rem;
 }
 
 @media screen and (max-width: 700px) {
@@ -162,6 +230,11 @@ main {
         'video-player video-player ad'
         'video-player video-player up-next'
         'video-info   actions      up-next'
-        'channel      subscribe    up-next';
+        'channel      subscribe    up-next'
+        '.            .            up-next';
+    }
+
+    .video-info {
+        border-bottom: 1px solid #ddd;
     }
 }
