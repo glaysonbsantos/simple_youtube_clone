@@ -217,6 +217,10 @@ main {
         display: none;
     }  
 
+    header {
+        padding: 0.8rem;
+    }
+
     .actions {
         grid-template-columns: repeat(3, auto);
         margin-left: -0.5rem;
