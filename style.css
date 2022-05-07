@@ -117,8 +117,6 @@ main {
     justify-content: space-evenly;
     align-items: end;
     grid-gap: 1rem;
-
-    overflow-x: auto;
 }
 
 .action {
@@ -218,6 +216,10 @@ main {
     .search, .ad {
         display: none;
     }  
+
+    .actions {
+        grid-template-columns: repeat(3, auto);
+    }
 }
 
 @media screen and (min-width: 700px) {
