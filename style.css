@@ -219,6 +219,7 @@ main {
 
     .actions {
         grid-template-columns: repeat(3, auto);
+        padding: 0 1rem;
     }
 }
 
