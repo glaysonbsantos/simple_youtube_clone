@@ -17,7 +17,7 @@ header {
 
     display: grid;
     grid-template-columns: auto auto;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -93,6 +93,7 @@ main {
 .video-info {
     grid-area: video-info;
     padding: 0 0 1rem 1rem;
+    margin-right: -20px;
 }
 
 .video-info h1 {
@@ -148,6 +149,8 @@ main {
     grid-template-columns: auto auto;
     justify-content: start;
     grid-gap: 1rem;
+
+    margin-right: -20px;
 }
 
 .channel img {
@@ -212,20 +215,33 @@ main {
     font-size: 0.9rem;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1023px) {
     .search, .ad {
         display: none;
     }  
 
-    .actions {
-        grid-template-columns: repeat(3, auto);
-        margin-left: -0.5rem;
+    main {
+        grid-gap: 1rem 0;
     }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (max-width: 500px) {
+    .actions {
+        grid-template-columns: repeat(3, auto);
+        justify-content: flex-start;
+    } 
+}
+
+@media screen and (max-width: 343px) {
+    .subscribe .button {
+        font-size: 0.5rem;
+    } 
+}
+
+@media screen and (min-width: 1024px) {
     header {
         grid-template-columns: auto auto auto;
+        justify-content: space-around;
     }
 
     main {
