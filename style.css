@@ -93,7 +93,6 @@ main {
 .video-info {
     grid-area: video-info;
     padding: 0 0 1rem 1rem;
-    margin-right: -20px;
 }
 
 .video-info h1 {
@@ -149,8 +148,6 @@ main {
     grid-template-columns: auto auto;
     justify-content: start;
     grid-gap: 1rem;
-
-    margin-right: -20px;
 }
 
 .channel img {
